@@ -1,1 +1,0 @@
-Complete OpenAPI description documents
