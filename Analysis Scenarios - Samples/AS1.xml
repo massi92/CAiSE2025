@@ -1,4 +1,4 @@
-<AnalysisScenario id="AS1" includes="AS3.xml">
+<AnalysisScenario id="AS1" specialises="AS3.xml">
     <Step id="1" name="collection of measures" supervisedBy="Client company">
         <Task id="1" name="internal temperature sensors data collection" />
         <Task id="2" name="external temperature sensors data collection" />
