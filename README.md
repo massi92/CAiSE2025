@@ -12,4 +12,4 @@ Specifically, the content is uploaded following the subsequent organisation.
 * Colab Notebooks used to both interact with the LLM and to perform the quantitative assessment of the RAG module performance (_Colab Notebooks_ folder)
     * Framework used to interact with the LLM: [LangChain](https://python.langchain.com/v0.1/docs/get_started/introduction)
     * Evaluation framework for the RAG module: [Ragas](https://docs.ragas.io/en/stable/)
-* Examples of interactions with the LLM, according to the devised prompt templates (_Excerpt of sample interactions_ folder)
+* Examples of interactions with the LLM, according to the devised prompt templates, provided as PDF files (_Excerpt of sample interactions_ folder)
