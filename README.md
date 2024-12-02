@@ -1,7 +1,7 @@
-# ER 2024
-## Conceptual Modelling and Large Language Models for Data Services Discovery
+# CAiSE 2025
+## An LLM-based Approach for Data Service Discovery
 
-Supplementary material for ER2024
+Supplementary material for CAiSE2025
 
 Specifically, the content is uploaded following the subsequent organisation.
 
