@@ -12,4 +12,6 @@ Specifically, the content is uploaded following the subsequent organisation.
 * Colab Notebooks used to both interact with the LLM and to perform the quantitative assessment of the RAG module performance (_Colab Notebooks_ folder)
     * Framework used to interact with the LLM: [LangChain](https://python.langchain.com/v0.1/docs/get_started/introduction)
     * Evaluation framework for the RAG module: [Ragas](https://docs.ragas.io/en/stable/)
+    * Vector Database for the Retrieval component of RAG: [ChromaDB](https://www.trychroma.com/)
+    * LLMs tested for the Generation component of RAG (from [Ollama](https://ollama.com/) open source models): [granite3-dense](https://ollama.com/library/granite3-dense:8b) and [gemma2](https://ollama.com/library/gemma2:27b)
 * Examples of interactions with the LLM, according to the devised prompt templates, provided as PDF files (_Excerpt of sample interactions_ folder)
