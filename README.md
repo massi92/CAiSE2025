@@ -10,6 +10,7 @@ Specifically, the content is uploaded following the subsequent organisation.
 * Examples of Atomic Data Services described through the [OpenAPI specification](https://spec.openapis.org/oas/v3.1.0) (_Data Services - Samples_ folder)
    * Adopting a partial description of services (i.e., emptying the majority of `summary` or `description` fields, especially the ones which are evocative of the functionalities provided by the services)
    * Adopting a complete description of services
+* Data to instantiate the prompt templates for the preliminary evaluation (_Data for templates instantiation_ folder)
 * Colab Notebooks used to both interact with the LLM and to perform the quantitative assessment of the RAG module performance (_Colab Notebooks_ folder)
     * Framework used to interact with the LLM: [LangChain](https://python.langchain.com/v0.1/docs/get_started/introduction)
     * Evaluation framework for the RAG module: [Ragas](https://docs.ragas.io/en/stable/)
