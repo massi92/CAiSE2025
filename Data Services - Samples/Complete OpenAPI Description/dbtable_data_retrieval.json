@@ -60,7 +60,9 @@
               }
             }
           },
-          "404": { "description": "Database table not found" }
+          "404": {
+            "description": "Database table not found"
+          }
         }
       }
     }

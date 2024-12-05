@@ -38,12 +38,19 @@
                   },
                   "how": {
                     "type": "string",
-                    "enum": ["left", "right", "outer", "inner"],
+                    "enum": [
+                      "left",
+                      "right",
+                      "outer",
+                      "inner"
+                    ],
                     "default": "inner",
                     "description": "Type of merge to be performed"
                   }
                 },
-                "required": ["primary_dataset"]
+                "required": [
+                  "primary_dataset"
+                ]
               }
             }
           }

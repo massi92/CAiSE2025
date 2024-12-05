@@ -35,12 +35,33 @@
                   },
                   "method": {
                     "type": "string",
-                    "enum": ["linear", "time", "index", "pad", "nearest", "zero", "slinear", "quadratic", "cubic", "spline", "barycentric", "polynomial", "krogh", "piecewise_polynomial", "pchip", "akima"],
+                    "enum": [
+                      "linear",
+                      "time",
+                      "index",
+                      "pad",
+                      "nearest",
+                      "zero",
+                      "slinear",
+                      "quadratic",
+                      "cubic",
+                      "spline",
+                      "barycentric",
+                      "polynomial",
+                      "krogh",
+                      "piecewise_polynomial",
+                      "pchip",
+                      "akima"
+                    ],
                     "default": "linear",
                     "description": "The interpolation method"
                   }
                 },
-                "required": ["dataset", "timestamp_column", "reference_temporal_axis"]
+                "required": [
+                  "dataset",
+                  "timestamp_column",
+                  "reference_temporal_axis"
+                ]
               }
             }
           }

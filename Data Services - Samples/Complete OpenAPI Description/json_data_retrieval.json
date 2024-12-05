@@ -51,7 +51,9 @@
               }
             }
           },
-          "404": { "description": "JSON file not found" }
+          "404": {
+            "description": "JSON file not found"
+          }
         }
       }
     }

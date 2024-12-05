@@ -40,7 +40,12 @@
                     "description": "The name of the target column"
                   }
                 },
-                "required": ["test_set", "regression_coefficients", "feature_columns", "target_column"]
+                "required": [
+                  "test_set",
+                  "regression_coefficients",
+                  "feature_columns",
+                  "target_column"
+                ]
               }
             }
           }

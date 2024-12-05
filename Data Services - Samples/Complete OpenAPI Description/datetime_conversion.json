@@ -33,9 +33,33 @@
                   "filter_expression": {
                     "type": "string",
                     "description": "Boolean expression based on attributes"
+                  },
+                  "transformation_function": {
+                    "type": "string",
+                    "description": "Function to transform data (e.g., lowercase, uppercase, number conversion)",
+                    "enum": [
+                      "lowercase",
+                      "uppercase",
+                      "to_number",
+                      "to_string"
+                    ]
+                  },
+                  "aggregation_function": {
+                    "type": "string",
+                    "description": "Function to aggregate data (e.g., average, max, min)",
+                    "enum": [
+                      "average",
+                      "max",
+                      "min",
+                      "sum",
+                      "count"
+                    ]
                   }
                 },
-                "required": ["dataframe", "column_name"]
+                "required": [
+                  "dataframe",
+                  "column_name"
+                ]
               }
             }
           }
