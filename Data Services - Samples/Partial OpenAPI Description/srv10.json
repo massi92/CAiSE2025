@@ -30,9 +30,33 @@
                   },
                   "filter_expression": {
                     "type": "string"
+                  },
+                  "transformation_function": {
+                    "type": "string",
+                    "description": "Function to transform data (e.g., lowercase, uppercase, number conversion)",
+                    "enum": [
+                      "lowercase",
+                      "uppercase",
+                      "to_number",
+                      "to_string"
+                    ]
+                  },
+                  "aggregation_function": {
+                    "type": "string",
+                    "description": "Function to aggregate data (e.g., average, max, min)",
+                    "enum": [
+                      "average",
+                      "max",
+                      "min",
+                      "sum",
+                      "count"
+                    ]
                   }
                 },
-                "required": ["dataframe", "test_size"]
+                "required": [
+                  "dataframe",
+                  "test_size"
+                ]
               }
             }
           }
@@ -53,7 +77,10 @@
                       "additionalProperties": {}
                     }
                   },
-                  "required": ["train", "test"]
+                  "required": [
+                    "train",
+                    "test"
+                  ]
                 }
               }
             }

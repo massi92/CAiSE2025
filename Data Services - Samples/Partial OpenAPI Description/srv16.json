@@ -3,7 +3,7 @@
   "info": {
     "title": "srv16",
     "version": "1.0.0",
-	"x-service-type": "DISPATCH"
+    "x-service-type": "DISPATCH"
   },
   "paths": {
     "/merge-datasets": {
@@ -34,11 +34,47 @@
                   },
                   "how": {
                     "type": "string",
-                    "enum": ["left", "right", "outer", "inner"],
+                    "enum": [
+                      "left",
+                      "right",
+                      "outer",
+                      "inner"
+                    ],
                     "default": "inner"
+                  },
+                  "projection_attributes": {
+                    "type": "string",
+                    "description": "Subset of attributes to include in the result"
+                  },
+                  "filter_expression": {
+                    "type": "string",
+                    "description": "Boolean expression based on attributes"
+                  },
+                  "transformation_function": {
+                    "type": "string",
+                    "description": "Function to transform data (e.g., lowercase, uppercase, number conversion)",
+                    "enum": [
+                      "lowercase",
+                      "uppercase",
+                      "to_number",
+                      "to_string"
+                    ]
+                  },
+                  "aggregation_function": {
+                    "type": "string",
+                    "description": "Function to aggregate data (e.g., average, max, min)",
+                    "enum": [
+                      "average",
+                      "max",
+                      "min",
+                      "sum",
+                      "count"
+                    ]
                   }
                 },
-                "required": ["primary_dataset"]
+                "required": [
+                  "primary_dataset"
+                ]
               }
             }
           }

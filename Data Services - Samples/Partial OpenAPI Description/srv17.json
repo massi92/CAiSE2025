@@ -3,7 +3,7 @@
   "info": {
     "title": "srv17",
     "version": "1.0.0",
-	"x-service-type": "DISPATCH"
+    "x-service-type": "DISPATCH"
   },
   "paths": {
     "/interpolate": {
@@ -31,11 +31,61 @@
                   },
                   "method": {
                     "type": "string",
-                    "enum": ["linear", "time", "index", "pad", "nearest", "zero", "slinear", "quadratic", "cubic", "spline", "barycentric", "polynomial", "krogh", "piecewise_polynomial", "pchip", "akima"],
+                    "enum": [
+                      "linear",
+                      "time",
+                      "index",
+                      "pad",
+                      "nearest",
+                      "zero",
+                      "slinear",
+                      "quadratic",
+                      "cubic",
+                      "spline",
+                      "barycentric",
+                      "polynomial",
+                      "krogh",
+                      "piecewise_polynomial",
+                      "pchip",
+                      "akima"
+                    ],
                     "default": "linear"
+                  },
+                  "projection_attributes": {
+                    "type": "string",
+                    "description": "Subset of attributes to include in the result"
+                  },
+                  "filter_expression": {
+                    "type": "string",
+                    "description": "Boolean expression based on attributes"
+                  },
+                  "transformation_function": {
+                    "type": "string",
+                    "description": "Function to transform data (e.g., lowercase, uppercase, number conversion)",
+                    "enum": [
+                      "lowercase",
+                      "uppercase",
+                      "to_number",
+                      "to_string"
+                    ]
+                  },
+                  "aggregation_function": {
+                    "type": "string",
+                    "description": "Function to aggregate data (e.g., average, max, min)",
+                    "enum": [
+                      "average",
+                      "max",
+                      "min",
+                      "sum",
+                      "count"
+                    ]
                   }
                 },
-                "required": ["dataset", "timestamp_column", "reference_temporal_axis"]
+                "required": [
+                  "dataset",
+                  "timestamp_column",
+                  "reference_temporal_axis"
+                ]
               }
             }
           }
